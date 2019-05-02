@@ -41,6 +41,7 @@ listEntry = tk.Entry (root, width=27, textvariable = entry_text)
 canvas1.create_window(400, 50, window=listEntry)
 
 def requiredField(): 
+     list1.clear()
      if len(listEntry.get()) == 0: 
          new_text = "Required Field"
          listEntry.delete(0, tk.END)
